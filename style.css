@@ -1,0 +1,29 @@
+.inativa {
+    border-color: rgba(0, 255, 255, 0);
+    width: 2vw;
+    height: 4vh;
+}
+.ativa {
+    margin: 0%;
+    width: 2vw;
+    height: 4vh;
+    text-align: center;
+    text-transform: uppercase;
+                                                
+}
+.palavra{
+    color: white;
+    margin: 0%;
+    background-color: black;
+    width: 2vw;
+    height: 3vh;
+    
+}
+
+
+
+
+
+
+
+

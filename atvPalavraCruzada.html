@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="validar()">validar</button>
+    <table>
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="1 "></td>
+            <td><input class="ativa"maxlength="1" id="a_a"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1" id="a_b"></td>
+            <td><input class="palavra"placeholder="2"></td>
+            <td><input class="ativa"maxlength="1" id="b_a"></td>
+            <td><input class="inativa"placeholder=""></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="3"></td>
+            <td><input class="ativa"maxlength="1" id="c_a"></td>
+            <td><input class="ativa"maxlength="1" id="c_b"></td>
+            <td><input class="ativa"maxlength="1" id="a_c"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1" id="b_b"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="5"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="6">></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="4  "></td>
+            <td><input class="ativa"maxlength="1" id="a_d"></td>
+            <td><input class="ativa"maxlength="1" id="d_b"></td>
+            <td><input class="ativa"maxlength="1" id="d_c"></td>
+            <td><input class="ativa"maxlength="1" id="d_d"></td>
+            <td><input class="ativa"maxlength="1" id="d_e"></td>
+            <td><input class="ativa"maxlength="1" id="d_f"></td>
+            <td><input class="ativa"maxlength="1" id="d_g"></td>
+            <td><input class="ativa"maxlength="1" id="d_h"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="7"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1" id="a_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="8"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="e_b"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="f_b"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="g_a"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1" id="a_f"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="h_a"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="f_c"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="g_b"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="10"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1" id="a_g"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="h_b"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="9"></td>
+            <td><input class="ativa"maxlength="1"id="i_a"></td>
+            <td><input class="ativa"maxlength="1"id="i_b"></td>
+            <td><input class="ativa"maxlength="1"id="i_c"></td>
+            <td><input class="ativa"maxlength="1"id="i_d"></td>
+            <td><input class="ativa"maxlength="1"id="i_e"></td>
+            <td><input class="ativa"maxlength="1"id="i_f"></td>
+            <td><input class="ativa"maxlength="1"id="i_g"></td>
+            <td><input class="ativa"maxlength="1"id="i_h"></td>
+            <td><input class="ativa"maxlength="1" id="a_h"></td>
+            <td><input class="ativa"maxlength="1"id="i_j"></td>
+            <td><input class="ativa"maxlength="1"id="i_k"></td>
+            <td><input class="ativa"maxlength="1"id="i_l"></td>
+            <td><input class="ativa"maxlength="1"id="i_m"></td>
+            <td><input class="ativa"maxlength="1"id="i_n"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="j_b"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="h_d"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="11"></td>
+            <td><input class="ativa"maxlength="1"id="k_a"></td>
+            <td><input class="ativa"maxlength="1"id="k_b"></td>
+            <td><input class="ativa"maxlength="1"id="k_c"></td>
+            <td><input class="ativa"maxlength="1"id="k_d"></td>
+            <td><input class="ativa"maxlength="1"id="k_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="h_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="j_d"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="12"></td>
+            <td><input class="ativa"maxlength="1"id="l_a"></td>
+            <td><input class="ativa"maxlength="1"id="l_b"></td>
+            <td><input class="ativa"maxlength="1"id="l_c"></td>
+            <td><input class="ativa"maxlength="1"id="l_d"></td>
+            <td><input class="ativa"maxlength="1"id="l_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="13"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="j_f"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="m_a"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="j_g"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="14"></td>
+            <td><input class="ativa"maxlength="1"id="m_b"></td>
+            <td><input class="ativa"maxlength="1"id="n_b"></td>
+            <td><input class="ativa"maxlength="1"id="n_c"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="m_c"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="j_i"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="palavra"placeholder="16"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="m_d"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="palavra"placeholder="15"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="p_a"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="m_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="ativa"maxlength="1"id="o_a"></td>
+            <td><input class="ativa"maxlength="1"id="o_b"></td>
+            <td><input class="ativa"maxlength="1"id="o_c"></td>
+            <td><input class="ativa"maxlength="1"id="o_d"></td>
+            <td><input class="ativa"maxlength="1"id="o_e"></td>
+            <td><input class="ativa"maxlength="1"id="o_f"></td>
+            <td><input class="ativa"maxlength="1"id="o_g"></td>
+            <td><input class="ativa"maxlength="1"id="o_h"></td>
+            <td><input class="ativa"maxlength="1"id="o_i"></td>
+            <td><input class="ativa"maxlength="1"id="o_j"></td>
+            <td><input class="ativa"maxlength="1"id="o_k"></td>
+            <td><input class="ativa"maxlength="1"id="o_l"></td>
+            <td><input class="ativa"maxlength="1"id="o_m"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"  maxlength="1"id="p_c"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="p_d"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"  maxlength="1"id="p_e"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="p_f"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+        <tr>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="ativa"maxlength="1"id="p_g"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+            <td><input class="inativa"></td>
+        </tr>
+
+    </table>
+</section>
+
+
+
+</body>
+
+</html>
+
+<script>
+    function validar() {
+    var um_um = a_a.value        /* Q */
+    var um_dois = a_b.value      /* U */
+    var um_tres = a_c.value      /* A */
+    var um_quatro = a_d.value    /* D */
+    var um_cinco = a_e.value     /* C */
+    var um_seis = a_f.value      /* O */
+    var um_sete = a_g.value      /* R */
+    var um_oito = a_h.value      /* E */
+
+    var dois_um = b_a.value     /* D */
+    var dois_dois = b_b.value   /* M */
+   
+    var tres_um = c_a.value     /* U */
+    var tres_dois = c_b.value   /* L */
+    
+
+   
+    var quatro_dois = d_b.value     /* U */
+    var quatro_tres = d_c.value     /* A */
+    var quatro_quatro = d_d.value   /* L */
+    var quatro_cinco = d_e.value    /* C */
+    var quatro_seis = d_f.value     /* O */
+    var quatro_sete = d_g.value     /* R */
+    var quatro_oito = d_h.value     /* E */
+
+    
+    var cinco_dois = e_b.value   /* S */
+
+    
+    var seis_dois = f_b.value   /* A */
+    var seis_tres = f_c.value   /* M */
+
+    var sete_um = g_a.value     /* R */
+    var sete_dois = g_b.value   /* O */     
+
+    var oito_um = h_a.value      /* F */
+    var oito_dois = h_b.value    /* L */
+    var oito_quatro = h_d.value  /* S */
+    var oito_cinco = h_e.value   /* H */    
+
+    var nove_um = i_a.value        /* M */
+    var nove_dois = i_b.value      /* E */
+    var nove_tres = i_c.value      /* M */
+    var nove_quatro = i_d.value    /* O */
+    var nove_cinco = i_e.value     /* R */
+    var nove_seis = i_f.value      /* I */
+    var nove_sete = i_g.value      /* A */
+    var nove_oito = i_h.value      /* D */
+
+    var nove_dez = i_j.value       /* M */
+    var nove_onze = i_k.value      /* A */
+    var nove_doze = i_l.value      /* S */
+    var nove_treze = i_m.value     /* S */
+    var nove_catorze = i_n.value   /* A */
+
+    
+    var dez_dois = j_b.value        /* D */
+    var dez_quatro = j_d.value      /* E */
+    var dez_seis = j_f.value        /* S */
+    var dez_sete = j_g.value        /* B */
+    var dez_nove = j_i.value        /* S */
+
+    var onze_um = k_a.value         /* E */
+    var onze_dois = k_b.value       /* P */
+    var onze_tres = k_c.value       /* R */
+    var onze_quatro = k_d.value     /* O */
+    var onze_cinco = k_e.value      /* M */
+
+    var doze_um = l_a.value         /* I */
+    var doze_dois = l_b.value       /* S */
+    var doze_tres = l_c.value       /* E */
+    var doze_quatro = l_d.value     /* T */
+    var doze_cinco = l_e.value      /* E */
+    
+    var treze_um = m_a.value        /* I */
+    var treze_dois = m_b.value      /* C */
+    var treze_tres = m_c.value      /* I */
+    var treze_quatro = m_d.value    /* N */
+    var treze_cinco = m_e.value     /* C */
+    
+    var catorze_um = n_b.value      /* P */
+    var catorze_dois = n_c.value    /* U */   
+
+    var quinze_um = o_a.value           /* R */
+    var quinze_dois = o_b.value         /* E */
+    var quinze_tres = o_c.value         /* G */
+    var quinze_quatro = o_d.value       /* I */
+    var quinze_cinco = o_e.value        /* S */
+    var quinze_seis = o_f.value         /* T */
+    var quinze_sete = o_g.value         /* R */
+    var quinze_oito = o_h.value         /* A */
+    var quinze_nove = o_i.value         /* D */
+    var quinze_dez = o_j.value          /* O */
+    var quinze_onze = o_k.value         /* R */
+    var quinze_doze = o_l.value         /* E */
+    var quinze_treze = o_m.value        /* S */
+
+    var dezesseis_um = p_a.value        /* D */
+    var dezesseis_tres = p_c.value      /* T */
+    var dezesseis_quatro = p_d.value    /* A */
+    var dezesseis_cinco = p_e.value     /* B */
+    var dezesseis_seis = p_f.value      /* U */
+    var dezesseis_sete = p_g.value      /* S */
+
+    if (um_um == "Q" && um_dois == "U" && um_tres == "A" && um_quatro == "D" &&
+        um_cinco == "C" && um_seis == "O" && um_sete == "R" && um_oito == "E") {
+        alert("Letra errada")
+    }
+
+    if (dois_um == "D" && dois_dois == "M" && quatro_tres == "A") {
+        alert("Letra errada")
+    }
+
+    if (tres_um == "U" && tres_dois == "L" && um_tres == "A") {
+        alert("Letra errada")
+    }
+
+    if (um_quatro == "D" && quatro_dois == "U" && quatro_tres == "A" && quatro_quatro == "L" && quatro_cinco == "C" && quatro_seis == "O" && quatro_sete == "R" && quatro_oito == "E") {
+        alert("Letra errada")
+    }
+
+    if (quatro_cinco == "C" && cinco_dois == "S") {
+        alert("Letra errada")
+    }
+
+    if (quatro_sete == "R" && seis_dois == "A" && seis_tres == "M") {
+        alert("Letra errada")
+    }
+
+    if(sete_um == "R" && sete_dois == "O" && nove_tres == "M") {
+        alert("Letra errada")
+    }
+
+    if(oito_um == "F" && oito_dois == "L" && nove_onze == "A" && oito_quatro == "S" && oito_cinco == "H") {
+        alert("Letra errada")
+    }
+
+    if(nove_um == "M" && nove_dois == "E" && nove_tres == "M" && nove_quatro == "O" && nove_cinco == "R" && nove_seis == "I" && nove_sete == "A" && nove_oito == "D" && um_oito == "E" && nove_dez == "M" && nove_onze == "A" && nove_doze == "S" && nove_treze == "S" && nove_catorze == "A" ) {
+        alert("Letra errada")
+    }
+    
+    if(nove_sete == "A" && dez_dois == "D" && onze_tres == "R" && dez_quatro == "E" && doze_dois == "S" && dez_seis == "S" && dez_sete == "B" && catorze_dois == "U" && dez_nove == "S") {
+        alert("Letra errada")
+    }
+
+    if(onze_um == "E" && onze_dois == "P" && onze_tres == "R" && onze_quatro == "O" && onze_cinco == "M") {
+        alert("Letra errada")
+    }
+
+    if(doze_um == "I" && doze_dois == "S" && doze_tres == "E" && doze_quatro == "T" && doze_cinco == "E") {
+        alert("Letra errada")
+    }
+
+    if(treze_um == "I" && treze_dois == "C" && treze_tres == "I" && treze_quatro == "N" && treze_cinco == "C" && quinze_dez == "O") {
+        alert("Letra errada")
+    }
+
+    if(treze_dois == "C" && catorze_um == "P" && catorze_dois == "U") {
+        alert("Letra errada")
+    }
+    
+    if(quinze_um == "R" && quinze_dois == "E" && quinze_tres == "G" && quinze_quatro == "I" && quinze_cinco == "S" && quinze_seis == "T" && quinze_sete == "R" && quinze_oito == "A" && quinze_nove == "D" && quinze_dez == "O" && quinze_onze == "R" && quinze_doze == "E" && quinze_treze == "S") {
+        alert("Letra errada")
+    }
+    
+    if(dezesseis_um == "D" && quinze_oito == "A" && dezesseis_tres == "T" && dezesseis_quatro == "A" && dezesseis_cinco == "B" && dezesseis_seis == "U" && dezesseis_sete == "S") {
+        alert("Letra errada")
+    }
+}
+</script>

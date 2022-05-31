@@ -1,4 +1,5 @@
 .inativa {
+    display: none;
     border-color: rgba(0, 255, 255, 0);
     width: 2vw;
     height: 4vh;
@@ -9,7 +10,7 @@
     height: 4vh;
     text-align: center;
     text-transform: uppercase;
-                                                
+    border: 2px solid blueviolet;                                                 
 }
 .palavra{
     color: white;
@@ -17,9 +18,33 @@
     background-color: black;
     width: 2vw;
     height: 3vh;
+    cursor: default;
     
 }
+body{
+    background-image: linear-gradient(rgb(204, 204, 204), rgb(32, 56, 87));
+}
 
+.button{
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: green;
+    border-radius: 20px;
+    color: #fff;
+    transition: 1s;
+}
+.button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-left: 90px;
+}
 
 
 
